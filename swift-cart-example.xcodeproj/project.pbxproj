@@ -222,7 +222,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)//Carthage/Build/SwiftyJSON.framework",
+				"$(SRCROOT)//Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			outputPaths = (
 			);
