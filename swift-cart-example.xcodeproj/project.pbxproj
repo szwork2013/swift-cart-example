@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29467A7A1B2654120013F720 /* Build in Frameworks */ = {isa = PBXBuildFile; fileRef = 29467A791B2654120013F720 /* Build */; };
 		298E0CFC1B2653AF00784A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E0CFB1B2653AF00784A26 /* AppDelegate.swift */; };
 		298E0CFE1B2653AF00784A26 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E0CFD1B2653AF00784A26 /* MasterViewController.swift */; };
 		298E0D001B2653AF00784A26 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298E0CFF1B2653AF00784A26 /* DetailViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29467A791B2654120013F720 /* Build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Build; path = Carthage/Build; sourceTree = "<group>"; };
 		298E0CF61B2653AF00784A26 /* swift-cart-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-cart-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		298E0CFA1B2653AF00784A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		298E0CFB1B2653AF00784A26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29467A7A1B2654120013F720 /* Build in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		298E0CED1B2653AF00784A26 = {
 			isa = PBXGroup;
 			children = (
+				29467A791B2654120013F720 /* Build */,
 				298E0CF81B2653AF00784A26 /* swift-cart-example */,
 				298E0D101B2653AF00784A26 /* swift-cart-exampleTests */,
 				298E0CF71B2653AF00784A26 /* Products */,
@@ -125,6 +129,7 @@
 				298E0CF21B2653AF00784A26 /* Sources */,
 				298E0CF31B2653AF00784A26 /* Frameworks */,
 				298E0CF41B2653AF00784A26 /* Resources */,
+				29467A7B1B26541B0013F720 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -209,6 +214,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29467A7B1B26541B0013F720 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)//Carthage/Build/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		298E0CF21B2653AF00784A26 /* Sources */ = {
@@ -415,6 +437,7 @@
 				298E0D191B2653AF00784A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		298E0D1A1B2653AF00784A26 /* Build configuration list for PBXNativeTarget "swift-cart-exampleTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +446,7 @@
 				298E0D1C1B2653AF00784A26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
